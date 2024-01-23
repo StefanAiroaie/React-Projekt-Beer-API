@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./productCard.css"
 const ProductCard = ({ numePeCareIlDauMaiDeparte }) => {
 
-    console.log(numePeCareIlDauMaiDeparte);
+    console.log(numePeCareIlDauMaiDeparte._id);
     return (<>
 
 
