@@ -34,7 +34,11 @@ const ProductDetail = () => {
                     <div>
                         <h2>{numePeCareIlDauMaiDeparte.name}</h2>
                         <img src={numePeCareIlDauMaiDeparte.image_url} alt={numePeCareIlDauMaiDeparte.name} />
-                        <p>{numePeCareIlDauMaiDeparte.name}</p>
+                        <p>{numePeCareIlDauMaiDeparte.brewers_tips}</p>
+                        <h5>{numePeCareIlDauMaiDeparte.tagline}</h5>
+                        <h6>{numePeCareIlDauMaiDeparte.first_brewed}</h6>
+                        <p>Attenuation level: <b>{numePeCareIlDauMaiDeparte.attenuation_level}</b> </p>
+                        <p>{numePeCareIlDauMaiDeparte.description}</p>
                     </div>
                 ) : (
                     <p>

@@ -2,7 +2,9 @@ import { Link } from "react-router-dom";
 const Nav = () => {
     return (
         <>
-            <Link to="/"><button>Home</button></Link>
+            <Link to="/"><button><img src="../src/assets/img/logo.svg" alt="allbeers" /></button></Link>
+
+
         </>
     );
 }

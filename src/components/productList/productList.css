@@ -1,13 +1,22 @@
-.productList {
-
+.productCard {
+    flex: 1 1 300px;
+    border: 1px solid #eaeaea;
     display: flex;
-    flex-direction: column;
-    flex: 1 1 auto;
+    flex-direction: row;
     gap: 1rem;
+    padding: 2rem;
+
 }
 
 
-.productCard {
+.productCard img {
+    width: 100px;
+    height: auto;
+}
 
-    border: 1px solid #eaeaea;
+.productCardInfos {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    flex: 1 1 300px;
 }
