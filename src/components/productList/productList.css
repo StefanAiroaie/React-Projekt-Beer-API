@@ -1,0 +1,13 @@
+.productList {
+
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 auto;
+    gap: 1rem;
+}
+
+
+.productCard {
+
+    border: 1px solid #eaeaea;
+}

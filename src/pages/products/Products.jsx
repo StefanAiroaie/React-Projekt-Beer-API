@@ -4,7 +4,7 @@ const Products = () => {
     return (
         <>
             <h5>Das ist product list seite</h5>
-            <ProductList />
+            <section className="productsList"><ProductList /></section>
         </>
     );
 }

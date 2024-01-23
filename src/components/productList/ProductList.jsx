@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import Nav from "../nav/Nav";
 import ProductCard from "../productCard/ProductCard";
+import "./productList.css"
 
 
 const ProductList = () => {
@@ -13,17 +14,12 @@ const ProductList = () => {
 
     useEffect(() => {
         const fetchAPI = async () => {
-
             const raspunsDeLaAPI = await axios.get(apiLink)
             setListaCuBere(raspunsDeLaAPI.data)
         }
-
         fetchAPI()
-
-
     }, [])
 
-    console.log(listaCuBere);
 
 
     return (<>
@@ -31,7 +27,7 @@ const ProductList = () => {
 
         {listaCuBere.map((fiecareFelDeBere, index) => {
             return (
-                <div key={index}>
+                <div className="productCard" key={index}>
                     <ProductCard
                         numePeCareIlDauMaiDeparte={fiecareFelDeBere}
 
