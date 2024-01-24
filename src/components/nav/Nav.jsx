@@ -1,8 +1,10 @@
 import { Link } from "react-router-dom";
+import buttonLogo from "../../assets/img/logo.svg"
 const Nav = () => {
+
     return (
         <>
-            <Link to="/"><button><img src="../src/assets/img/logo.svg" alt="allbeers" /></button></Link>
+            <Link to="/"><button><img src={buttonLogo} alt="homebutton"></img></button></Link>
 
 
         </>
