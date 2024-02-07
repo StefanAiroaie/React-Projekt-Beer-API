@@ -46,7 +46,7 @@ const RandomProduct = () => {
                     </p>
                 )
             }
-            <Nav />
+            {/* <Nav /> */}
 
 
         </>
