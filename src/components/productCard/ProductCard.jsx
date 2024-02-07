@@ -10,6 +10,11 @@ const ProductCard = ({ numePeCareIlDauMaiDeparte }) => {
     return (<>
 
 
+
+
+
+
+
         <img src={numePeCareIlDauMaiDeparte.image_url} alt={numePeCareIlDauMaiDeparte.name} />
         <div className="productCardInfos">
             <h5>{numePeCareIlDauMaiDeparte.name}</h5>

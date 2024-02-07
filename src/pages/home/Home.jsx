@@ -1,5 +1,6 @@
 
 import { Link } from "react-router-dom";
+import NavBar from "../../components/navBar/NavBar";
 
 
 
@@ -7,6 +8,9 @@ import { Link } from "react-router-dom";
 const Home = () => {
     return (<>
 
+        <header>
+            <NavBar />
+        </header>
 
         <h1>Welkome auf meine Bier Sorten Seite</h1>
 
