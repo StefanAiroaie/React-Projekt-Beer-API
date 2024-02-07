@@ -2,7 +2,7 @@ import { Routes, Route } from 'react-router-dom'
 import './App.css'
 import Home from './pages/home/Home'
 import Products from './pages/products/Products'
-import ProductDetail from './components/productDetail/ProductDetail'
+import ProductDetail from './pages/productDetail/ProductDetail'
 import RandomProduct from './pages/random/RandomProuct'
 
 function App() {
