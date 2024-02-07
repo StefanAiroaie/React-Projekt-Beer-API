@@ -48,7 +48,7 @@ const ProductDetail = () => {
                     </p>
                 )
             }
-            <Nav />
+            {/* <Nav /> */}
         </>
     );
 }

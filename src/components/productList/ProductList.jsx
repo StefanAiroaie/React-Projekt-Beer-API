@@ -70,7 +70,7 @@ const ProductList = () => {
 
 
 
-        <Nav />
+        {/* <Nav /> */}
     </>);
 }
 
