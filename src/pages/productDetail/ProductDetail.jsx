@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import Nav from "../../components/nav/Nav";
 import { useParams } from "react-router-dom";
 import axios from "axios";
+import NavBar from "../../components/navBar/NavBar";
 
 
 
@@ -26,6 +27,7 @@ const ProductDetail = () => {
 
     return (
         <>
+            <NavBar />
             <h5>Das ist Product detail website</h5>
 
 

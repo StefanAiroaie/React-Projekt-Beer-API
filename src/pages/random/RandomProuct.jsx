@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import Nav from "../../components/nav/Nav";
 import axios from "axios";
+import NavBar from "../../components/navBar/NavBar";
 const RandomProduct = () => {
 
 
@@ -24,6 +25,7 @@ const RandomProduct = () => {
 
     return (
         <>
+            <NavBar />
             <h6>Hier ist unser random bier seite</h6>
             {/* <h1>{randomBeer.name}</h1> */}
 
