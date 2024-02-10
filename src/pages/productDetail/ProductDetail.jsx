@@ -35,6 +35,44 @@ const ProductDetail = () => {
         { name: 'Considerations', description: 'Made from natural materials. Grain and color vary with each item.' },
     ]
 
+    //     contributed_by
+
+    //     attenuation_level
+    // : 
+    // 76
+    // brewers_tips
+    // : 
+    // "Be careful not to collect too much wort from the mash. Once the sugars are all washed out there are some very unpleasant grainy tasting compounds that can be extracted into the wort."
+    // contributed_by
+    // : 
+    // "Sam Mason <samjbmason>"
+    // description
+    // : 
+    // "A titillating, neurotic, peroxide punk of a Pale Ale. Combining attitude, style, substance, and a little bit of low self esteem for good measure; what would your mother say? The seductive lure of the sassy passion fruit hop proves too much to resist. All that is even before we get onto the fact that there are no additives, preservatives, pasteurization or strings attached. All wrapped up with the customary BrewDog bite and imaginative twist."
+    // expireAt
+    // : 
+    // "2024-02-10T07:00:45.040Z"
+    // first_brewed
+    // : 
+    // "04/2008"
+    // image_url
+    // : 
+    // "https://images.punkapi.com/v2/2.png"
+    // name
+    // : 
+    // "Trashy Blonde"
+    // tagline
+    // : 
+    // "You Know You Shouldn't"
+    // __v
+    // : 
+    // 0
+    // _id
+    // : 
+    // "65c71f1d9ad5cd00028bf21e"
+
+
+
     return (
         <>
             <NavBar />

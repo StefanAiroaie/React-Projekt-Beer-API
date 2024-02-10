@@ -42,10 +42,6 @@ const Products = () => {
     return (
         <>
             <NavBar />
-
-
-
-            <h5>Das ist product list seite</h5>
             <section className="productsList"><ProductList /></section>
 
 
