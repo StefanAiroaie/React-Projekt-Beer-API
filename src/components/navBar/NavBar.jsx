@@ -2,13 +2,13 @@ import { Fragment } from 'react'
 import { Disclosure, Menu, Transition } from '@headlessui/react'
 import { BellIcon, XIcon, MenuIcon } from '../../../node_modules/@heroicons/react/outline'
 import { Link } from "react-router-dom";
+import beerLogo from "../../assets/img/Logo.svg"
+
 
 const navigation = [
     { name: 'Home', href: '/', current: false },
-    { name: 'Bear Products', href: '/products', current: true },
+    { name: 'Beer Products', href: '/products', current: true },
     { name: 'Projects', href: '/random', current: false },
-    { name: 'Calendar', href: '#', current: false },
-
 ]
 
 function classNames(...classes) {
@@ -48,8 +48,8 @@ const NavBar = () => {
                                     <div className="flex flex-shrink-0 items-center">
                                         <img
                                             className="h-8 w-auto"
-                                            src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=500"
-                                            alt="Your Company"
+                                            src={beerLogo}
+                                            alt="Logo Beer"
                                         />
                                     </div>
                                     <div className="hidden sm:ml-6 sm:block">
@@ -86,12 +86,12 @@ const NavBar = () => {
                                         className="relative rounded-full bg-gray-800 p-1 text-gray-400 hover:text-white focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800"
                                     >
                                         <span className="absolute -inset-1.5" />
-                                        <span className="sr-only">View notifications</span>
-                                        <BellIcon className="h-6 w-6" aria-hidden="true" />
+                                        <span className="sr-only">Dark/Light</span>
+                                        <BellIcon className="h-6 w-6" aria-hidden="false" />
                                     </button>
 
                                     {/* Profile dropdown */}
-                                    <Menu as="div" className="relative ml-3">
+                                    {/* <Menu as="div" className="relative ml-3">
                                         <div>
                                             <Menu.Button className="relative flex rounded-full bg-gray-800 text-sm focus:outline-none focus:ring-2 focus:ring-white focus:ring-offset-2 focus:ring-offset-gray-800">
                                                 <span className="absolute -inset-1.5" />
@@ -145,7 +145,7 @@ const NavBar = () => {
                                                 </Menu.Item>
                                             </Menu.Items>
                                         </Transition>
-                                    </Menu>
+                                    </Menu> */}
                                 </div>
                             </div>
                         </div>

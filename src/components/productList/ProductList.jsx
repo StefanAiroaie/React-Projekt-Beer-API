@@ -8,9 +8,10 @@ import { Link } from "react-router-dom";
 import MainProvider, { mainContext } from "../../context/mainProvider";
 
 
+
 const ProductList = () => {
 
-    const { products, fetchProduct, setFetchProduct } = useContext(mainContext)
+    const { products, fetchProduct, setFetchProduct, setId } = useContext(mainContext)
 
 
     // const apiLink = "https://ih-beers-api2.herokuapp.com/beers"
@@ -25,15 +26,17 @@ const ProductList = () => {
     //     fetchAPI()
     // }, [])
 
-    setFetchProduct(true)
+    useEffect(() => {
+        setFetchProduct(true)
+    })
+    // setId("65c71f1d9ad5cd00028bf21e")
 
     return (<>
         {
             products ?
                 (
                     <div className="bg-white">
-                        <div className="mx-auto max-w-2xl px-4 py-16 sm:px-6 sm:py-24 lg:max-w-7xl lg:px-8">
-                            <h2 className="text-2xl font-bold tracking-tight p-4 text-gray-900"></h2>
+                        <div className="mx-auto max-w-2xl px-4 py-8 sm:px-6 sm:py-8 lg:max-w-7xl lg:px-8">
                             <div className="grid grid-cols-1 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-8">
                                 {products.map((product) => (
                                     <Link to={`/product/${product._id}`} key={product._id} className="group">
@@ -58,25 +61,6 @@ const ProductList = () => {
 
                 )
         }
-
-
-        {/* {listaCuBere.map((fiecareFelDeBere, index) => {
-            return (
-                <div className="productCard" key={index}>
-                    <ProductCard
-                        numePeCareIlDauMaiDeparte={fiecareFelDeBere}
-
-                    />
-                </div>
-            )
-        }
-        )} */}
-
-
-
-
-
-        {/* <Nav /> */}
     </>);
 }
 

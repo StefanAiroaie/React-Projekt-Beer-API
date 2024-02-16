@@ -42,10 +42,7 @@ const Products = () => {
     return (
         <>
             <NavBar />
-            <section className="productsList"><ProductList /></section>
-
-
-
+            <main><ProductList /></main>
 
 
         </>
